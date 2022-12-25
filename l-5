@@ -1,0 +1,18 @@
+preorder traversal(using recursion)
+
+
+1. print node.
+2. make call for left side.
+3. make call for right side.
+
+code:
+
+void preorder(root){
+
+ if(root==NULL)return;
+ 
+  cout<<root->val;
+  preorder(root->left);
+  preorder(root->right);
+  
+  }
